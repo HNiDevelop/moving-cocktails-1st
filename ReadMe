@@ -1,0 +1,7 @@
+- download and install node.js (npm is available, inclues ruby gem)
+
+- install bundler to run Gemfile
+	gem install bundler
+	
+- install necessary gem packages (run Gemfile)
+	bundle install

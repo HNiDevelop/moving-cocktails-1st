@@ -1,0 +1,10 @@
+{
+  "name": "moving-cocktails",
+  "version": "1.0",
+  "description": "",
+  "author": "",
+  "dependencies": {
+    "sass": "*",
+    "compass": "*"
+  }
+}

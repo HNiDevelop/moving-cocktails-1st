@@ -1,0 +1,5 @@
+css_dir = "page/css"
+sass_dir = "sass"
+images_dir = "page/images"
+javascripts_dir = "page/js"
+fonts_dir = "page/fonts"
