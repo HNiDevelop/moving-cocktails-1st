@@ -32,26 +32,43 @@ body > div {
   padding: 1em;
   padding-bottom: 0;
   height: 100%;
-  -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
 /* line 37, ../../sass/main.scss */
 .text {
-  position: absolute;
-  z-index: 20;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  position: relative;
+  width: 55%;
+  height: 100%;
+  margin-right: 0%;
+  left: 0;
   /* background-color: rgba(255,255,255,0.5); */
   padding-top: 1em;
   padding-left: 1em;
-  color: #fff;
+  color: #000;
 }
-/* line 45, ../../sass/main.scss */
+/* line 51, ../../sass/main.scss */
 .text p {
   line-height: 1.5em;
 }
 
-/* line 50, ../../sass/main.scss */
+@media all and (min-width: 700px) {
+  /* line 58, ../../sass/main.scss */
+  .text h1 {
+    font-size: 3em;
+  }
+  /* line 62, ../../sass/main.scss */
+  .text p {
+    font-size: 1.5em;
+    padding-right: 0.5em;
+  }
+}
+/* line 69, ../../sass/main.scss */
 .img-logo {
   background-image: url("../assets/logo.jpg");
   background-repeat: no-repeat;
@@ -61,7 +78,7 @@ body > div {
   max-height: 450px;
 }
 
-/* line 61, ../../sass/main.scss */
+/* line 80, ../../sass/main.scss */
 .img-glass-1 {
   background-image: url("../assets/glass1.jpg");
   background-repeat: no-repeat;
@@ -70,7 +87,7 @@ body > div {
   height: 70%;
 }
 
-/* line 71, ../../sass/main.scss */
+/* line 90, ../../sass/main.scss */
 .img-glass-2 {
   background-image: url("../assets/glass2.jpg");
   background-repeat: no-repeat;
@@ -78,7 +95,7 @@ body > div {
   height: 100%;
 }
 
-/* line 80, ../../sass/main.scss */
+/* line 99, ../../sass/main.scss */
 .button {
   float: right;
   width: auto;
@@ -87,47 +104,41 @@ body > div {
   padding-top: 2em;
 }
 
-/* line 89, ../../sass/main.scss */
+/* line 108, ../../sass/main.scss */
 .block-1 {
   background-color: #8b1523;
 }
 
-/* line 95, ../../sass/main.scss */
+/* line 114, ../../sass/main.scss */
 .block-2 background {
   color: white;
 }
 
-/* line 100, ../../sass/main.scss */
+/* line 119, ../../sass/main.scss */
 body > div:nth-child(2) {
   overflow: hidden;
 }
 
-/* line 105, ../../sass/main.scss */
+/* line 124, ../../sass/main.scss */
 .image-wrapper {
   height: 100%;
 }
 
-/* line 108, ../../sass/main.scss */
+/* line 127, ../../sass/main.scss */
 .img-2 {
   background-image: url("../assets/kontakt.jpg");
-  font-size: 5em;
-  color: #FFF;
-  font-weight: bold;
-  -webkit-box-sizing: border-box;
+  padding: 2em;
   -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  -webkit-box-shadow: 0.5em 0.5em 0.5em black;
-  -moz-box-shadow: 0.5em 0.5em 0.5em black;
-  box-shadow: 0.5em 0.5em 0.5em black;
-  padding: 0.5em;
 }
 
-/* line 118, ../../sass/main.scss */
+/* line 133, ../../sass/main.scss */
 .box1 {
   height: 100%;
 }
 
-/* line 122, ../../sass/main.scss */
+/* line 137, ../../sass/main.scss */
 .box {
   position: absolute;
   left: 0;
@@ -135,7 +146,50 @@ body > div:nth-child(2) {
   background-color: #8b1523;
 }
 
-/* line 129, ../../sass/main.scss */
+/* line 144, ../../sass/main.scss */
 p {
   margin: 1em 0;
+}
+
+/* line 146, ../../sass/main.scss */
+.block-transp {
+  background-color: rgba(255, 255, 255, 0.7);
+  color: #FFF;
+  font-family: 'Comfortaa', bold;
+  padding: 0.5em;
+  -moz-border-radius: 0.3em;
+  -webkit-border-radius: 0.3em;
+  border-radius: 0.3em;
+  font-size: 2em;
+}
+/* line 156, ../../sass/main.scss */
+.block-transp h1 {
+  font-size: 1.5em;
+  color: #8b1523;
+}
+/* line 160, ../../sass/main.scss */
+.block-transp a {
+  color: #8b1523;
+}
+/* line 164, ../../sass/main.scss */
+.block-transp p {
+  margin: 0.5em 0;
+  color: #8b1523;
+}
+/* line 170, ../../sass/main.scss */
+.block-transp .impressum-link {
+  font-size: 0.5em;
+  line-height: 0.5em;
+  color: #8b1523;
+}
+
+/* line 179, ../../sass/main.scss */
+a {
+  color: #FFF;
+}
+
+/* line 183, ../../sass/main.scss */
+.impressum {
+  background-color: #8b1523;
+  color: #FFF;
 }
