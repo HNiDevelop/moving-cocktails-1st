@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+		<title>moving cocktails</title>
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+		
+		<script src="js/skrollr.min.js"></script>
+		<script src="js/main.js"></script>
+	</head>
+	<body onload="initPage()">
+
+		<!-- glass -->
+		<div class="img-glass" 
+			data-0="transform[bounce]:translate(0,0%) rotate(-2deg);"
+			data-80p="transform[bounce]:translate(0,0%) rotate(3deg);" 
+			data-200p="transform[bounce]:translate(0,45%) rotate(0deg)">
+		</div>
+
+		<!-- logo -->
+		<div class="block block-1" 
+			data-0="transform:translate(0,0%);" 
+			data-100p="transform:translate(0,-100%);">
+			<div class="button">Button</div>
+			<div class="image-frame">
+				<div class="img-logo"></div>
+			</div>
+		</div>
+
+		<!-- right -->
+		<div class="block block-2" 
+			data-100="transform:translate(0,100%);" 
+			data-200p="transform:translate(0,0%)" 
+			data-_box-200p="" 
+			data-_box-300p="transform:translate(0,-100%)">
+
+			<div class="box" 
+				data-200p="width:0%;" 
+				data-_box-200p="width:100%">
+			</div>
+		</div>
+
+		<div class="block img-2" 
+			data-_boxx-100p="transform:translate(0,100%);" 
+			data-_boxx-200p="transform:translate(0,0%);"></div>
+		<!-- -->
+	</body>
+</html>

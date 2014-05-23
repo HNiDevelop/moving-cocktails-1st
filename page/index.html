@@ -1,12 +1,78 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
 		<title>moving cocktails</title>
+		<link href='http://fonts.googleapis.com/css?family=Comfortaa:700,300' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" type="text/css" href="css/main.css">
+		
+		<script src="js/skrollr.min.js"></script>
 		<script src="js/main.js"></script>
 	</head>
-	<body>
+	<body onload="initPage()">
 
+		<!-- glass 1 -->
+		<div class="img-glass-1" 
+			data-0="transform[bounce]:translate(0,0%) rotate(-2deg);"
+			data-80p="transform[bounce]:translate(0,0%) rotate(3deg);" 
+			data-200p="transform[bounce]:translate(0,45%) rotate(0deg)">
+		</div>
 
+		<!-- logo -->
+		<div class="block block-1" 
+			data-0="transform:translate(0,0%);" 
+			data-100p="transform:translate(0,-100%);">
+			<div class="button">Facebook</div>
+			<div class="image-frame">
+				<div class="img-logo"></div>
+			</div>
+		</div>
+
+		<!-- right -->
+		<div class="block block-2" 
+			data-200="transform:translate(0,100%);" 
+			data-300p="transform:translate(0,0%);" 
+			data-_box1-300p="" 
+			data-_box1-400p="transform:translate(0,-100%);">
+
+			<div class="text service"
+				data-320p="color:rgb(0,0,0); left: 0%;"
+				data-_box-290p="color:rgb(255,255,255); left: 45%;"
+				data-_box-300p="color:rgb(255,255,255); left: 70%;">
+				<h1>Unser Service</h1> 
+				<p>
+				mobile Cocktailbar, <br/>
+				Cocktail-Schulungen, <br/>
+				Getränke-Full-Service,<br>
+				Vermietungen</p>
+			</div>
+
+			<div class="box" 
+				data-300p="width:0%;" 
+				data-_box-300p="width:100%"
+				data-_box-350p="width:100%">
+			</div>
+		</div>
+
+		<!-- glass 2 -->
+		<div class="img-wrapper" 
+			data-300p="transform:translate(-100%,0);" 
+			data-_box-335p="transform:translate(0%,0);">
+
+			<div class="img-glass-2"></div>	
+		</div>
+
+		<div class="block img-2" 
+			data-_boxx-450p="transform:translate(0,100%);" 
+			data-_boxx-550p="transform:translate(0,0%);">
+
+			Kontakt:
+			direktlink zum emailprogramm
+- telefon (0179/7710051)
+			Impressum
+		</div>
+		<!-- -->
 	</body>
 </html>
