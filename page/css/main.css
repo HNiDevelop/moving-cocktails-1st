@@ -99,32 +99,46 @@ body > div {
 .button {
   float: right;
   width: auto;
+  text-align: right;
   color: white;
-  padding-right: 2em;
+  padding-right: 1.5em;
   padding-top: 2em;
 }
-
 /* line 108, ../../sass/main.scss */
+.button > a {
+  display: block;
+  border: 0;
+}
+/* line 113, ../../sass/main.scss */
+.button img {
+  border: 0;
+}
+/* line 117, ../../sass/main.scss */
+.button .link-img {
+  margin-top: 1em;
+}
+
+/* line 122, ../../sass/main.scss */
 .block-1 {
   background-color: #8b1523;
 }
 
-/* line 114, ../../sass/main.scss */
+/* line 128, ../../sass/main.scss */
 .block-2 background {
   color: white;
 }
 
-/* line 119, ../../sass/main.scss */
+/* line 133, ../../sass/main.scss */
 body > div:nth-child(2) {
   overflow: hidden;
 }
 
-/* line 124, ../../sass/main.scss */
+/* line 138, ../../sass/main.scss */
 .image-wrapper {
   height: 100%;
 }
 
-/* line 127, ../../sass/main.scss */
+/* line 141, ../../sass/main.scss */
 .img-2 {
   background-image: url("../assets/kontakt.jpg");
   padding: 2em;
@@ -133,12 +147,12 @@ body > div:nth-child(2) {
   box-sizing: border-box;
 }
 
-/* line 133, ../../sass/main.scss */
+/* line 147, ../../sass/main.scss */
 .box1 {
   height: 100%;
 }
 
-/* line 137, ../../sass/main.scss */
+/* line 151, ../../sass/main.scss */
 .box {
   position: absolute;
   left: 0;
@@ -146,12 +160,12 @@ body > div:nth-child(2) {
   background-color: #8b1523;
 }
 
-/* line 144, ../../sass/main.scss */
+/* line 158, ../../sass/main.scss */
 p {
   margin: 1em 0;
 }
 
-/* line 146, ../../sass/main.scss */
+/* line 160, ../../sass/main.scss */
 .block-transp {
   background-color: rgba(255, 255, 255, 0.7);
   color: #FFF;
@@ -162,34 +176,79 @@ p {
   border-radius: 0.3em;
   font-size: 2em;
 }
-/* line 156, ../../sass/main.scss */
+/* line 170, ../../sass/main.scss */
 .block-transp h1 {
   font-size: 1.5em;
   color: #8b1523;
 }
-/* line 160, ../../sass/main.scss */
+/* line 174, ../../sass/main.scss */
 .block-transp a {
   color: #8b1523;
 }
-/* line 164, ../../sass/main.scss */
+/* line 178, ../../sass/main.scss */
 .block-transp p {
   margin: 0.5em 0;
   color: #8b1523;
 }
-/* line 170, ../../sass/main.scss */
+/* line 184, ../../sass/main.scss */
 .block-transp .impressum-link {
   font-size: 0.5em;
   line-height: 0.5em;
   color: #8b1523;
 }
 
-/* line 179, ../../sass/main.scss */
+/* line 193, ../../sass/main.scss */
 a {
   color: #FFF;
 }
 
-/* line 183, ../../sass/main.scss */
+/* line 197, ../../sass/main.scss */
 .impressum {
   background-color: #8b1523;
   color: #FFF;
+}
+
+@media all and (max-width: 600px) {
+  /* line 207, ../../sass/main.scss */
+  .button {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    padding-left: 1.5em;
+  }
+  /* line 213, ../../sass/main.scss */
+  .button > a {
+    float: left;
+  }
+  /* line 217, ../../sass/main.scss */
+  .button .link-img {
+    margin-top: -1em;
+    float: right;
+    width: 50%;
+    text-align: right;
+  }
+  /* line 224, ../../sass/main.scss */
+  .button .link-img img {
+    width: 80%;
+  }
+}
+@media all and (max-width: 800px) {
+  /* line 233, ../../sass/main.scss */
+  .button img {
+    width: 40%;
+  }
+}
+@media all and (max-width: 1099px) {
+  /* line 241, ../../sass/main.scss */
+  .button img {
+    width: 60%;
+  }
+}
+@media all and (min-width: 1100px) {
+  /* line 249, ../../sass/main.scss */
+  .button img {
+    width: 60%;
+  }
 }
